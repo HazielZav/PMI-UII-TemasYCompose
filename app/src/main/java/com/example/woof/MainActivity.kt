@@ -45,6 +45,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.woof.data.Dog
 import com.example.woof.data.dogs
 import com.example.woof.ui.theme.WoofTheme
+import com.example.woof.ui.theme.pequenaRedondeada
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -97,6 +98,7 @@ fun DogItem(
     var expanded by remember { mutableStateOf(false) }
     Card(
         modifier = modifier
+            .clip(pequenaRedondeada)
     ) {
         Column(
             modifier = Modifier
